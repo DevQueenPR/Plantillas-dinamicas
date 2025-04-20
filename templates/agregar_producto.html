@@ -1,0 +1,22 @@
+<!-- Agregar producto -->
+{% extends 'base.html' %}
+
+{% block title %}Agregar Producto{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2>Agregar Nuevo Producto</h2>
+  <form method="POST" action="{{ url_for('agregar_producto') }}">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre del Producto</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" required>
+    </div>
+    <div class="mb-3">
+      <label for="precio" class="form-label">Precio</label>
+      <input type="number" class="form-control" id="precio" name="precio" required step="0.01">
+    </div>
+    <button type="submit" class="btn btn-success">Guardar Producto</button>
+    <a href="{{ url_for('mostrar_productos') }}" class="btn btn-secondary">Cancelar</a>
+  </form>
+</div>
+{% endblock %}

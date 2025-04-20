@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+
+<div class="text-center my-5">
+    <h1>Gestión de Usuarios / Productos</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Gestión de Usuarios</h5>
+                <p class="card-text">Consulta o añade nuevos usuarios al sistema.</p>
+                <a href="/usuarios" class="btn btn-primary">Ver Usuarios</a>
+                <!-- create de usuario -->
+                <a href="/agregar_usuario" class="btn btn-success ms-2">Añadir Usuario</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Gestión de Productos</h5>
+                <p class="card-text">Consulta o añade nuevos productos a la base de datos.</p>
+                <a href="/productos" class="btn btn-primary">Ver Productos</a>
+                <!-- Agrega productos (create) -->
+                <a href="/agregar_producto" class="btn btn-success ms-2">Añadir Producto</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

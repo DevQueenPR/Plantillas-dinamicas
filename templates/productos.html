@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<!--  producto -->
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">Lista de Productos</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for producto in productos %}
+            <tr>
+                <td>{{ producto.nombre }}</td>
+                <td>${{ producto.precio }}</td>
+                <td>
+                    <a href="{{ url_for('editar_producto', id=loop.index0) }}" class="btn btn-warning btn-sm">Editar</a>
+                    <a href="{{ url_for('borrar_producto', id=loop.index0) }}" class="btn btn-danger btn-sm">Borrar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
