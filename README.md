@@ -43,20 +43,40 @@ En términos de escalabilidad, facilita el crecimiento del proyecto. Al tener to
 - Se gestionan usuarios y productos.
 - Permite ver usuarios y añadir usuarios.
 
+![image](https://github.com/user-attachments/assets/a8b1b40e-79ca-4ec9-a6b5-9ee0de7091fb)
+
+
 ### agregar_usuario.html
 - Se añaden usuarios.
+
+![image](https://github.com/user-attachments/assets/1e41bb5f-7775-46a1-b7f1-7da66cf2e44e)
+
 
 ### usuarios.html
 - Se ven, editan y borran usuarios.
 
+![image](https://github.com/user-attachments/assets/4e2ed950-1560-4d72-94c5-0319886ce80e)
+
+
 ### editar_usuario.html
 - Se edita el usuario seleccionado.
+
+![image](https://github.com/user-attachments/assets/888396e5-d8ff-4929-a346-da31e376e5cc)
+
 
 ### agregar_producto.html
 - Se agregan productos.
 
+![image](https://github.com/user-attachments/assets/b9d54abc-239c-4ace-b5d9-eb8efb35596f)
+
+
 ### productos.html
 - Se ven, editan y borran productos.
 
+![image](https://github.com/user-attachments/assets/15b87474-f197-4cff-9ff7-74217fc7f8a8)
+
+
 ### editar_producto.html
 - Se edita el producto seleccionado.
+
+![image](https://github.com/user-attachments/assets/c0aba104-1409-435d-976d-e4da1bd474df)
